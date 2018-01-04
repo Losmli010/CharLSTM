@@ -1,1 +1,1 @@
-# char_lstm_lm
+# char-lstm-lm
