@@ -74,7 +74,7 @@ def print_sentence(sent, index2char):
     sys.stdout.flush()
 
 def generate_sentence(model, index2char, char2index):
-    new_sentence = [char2index["STAR"]]
+    new_sentence = [char2index["START"]]
     while not new_sentence[-1] == char2index["END"]:
         next_word= model.predict(new_sentence)[-1]
         new_sentence.append(next_word)
